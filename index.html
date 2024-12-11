@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 43 to 48</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- // 1. Show an alert box on click on a link. -->
+
+<button onclick="showAlert()">Click me</button>
+
+
+<!-- // 2. Display some Mobile images in browser. On click on an image Show the message in alert to user. -->
+
+<div class="phones">
+<h1>Mobile Phone Lookup</h1>
+<div class="phoneshow">
+    <div class="img">
+    <img src="galaxy.webp" alt="" onclick="showMxg()">
+    <p>Galaxy</p>
+</div>
+<div class="img">
+    <img src="i phone.jpg" alt="" onclick="showMxg()">
+    <p>Iphone</p>
+</div>
+<div class="img">
+    <img src="V10.jpg" alt="" onclick="showMxg()">
+    <p>V10</p>
+</div>
+<div class="img">
+    <img src="huawei.jpg" alt="" onclick="showMxg()">
+    <p>Huawei</p>
+</div>
+</div>
+</div>
+
+
+<!-- // 3. Display 10 student records in table and each row should contain a delete button.
+//  If you click on a button to delete a record, entire row should be deleted. -->
+
+<div class="delet">
+    <table>
+        <thead>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+    </thead>
+    <tbody>
+        <tr id="row1">
+        <td>0</td>
+        <td>John</td>
+        <td>10</td>
+        <td><button onclick="deletRow('row1')">Delet</button></td>
+    </tr>
+    <tr id="row2">
+        <td>1</td>
+        <td>Doe</td>
+        <td>9</td>
+        <td><button onclick="deletRow('row2')">Delet</button></td>
+    </tr>
+    <tr id="row3">
+        <td>2</td>
+        <td>Mark</td>
+        <td>10</td>
+        <td><button onclick="deletRow('row3')">Delet</button></td>
+    </tr>
+    <tr id="row4">
+        <td>3</td>
+        <td>James</td>
+        <td>8</td>
+        <td><button onclick="deletRow('row4')">Delet</button></td>
+    </tr>
+    </tbody>
+    </table>
+</div>
+
+<!-- // 4. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout. -->
+
+
+<div class="image-change">
+    <h1>Mouse Over and Out </h1>
+    <img src="flower.jpg" onmouseover="src='butterfly.jpg'" onmouseout="src='flower.jpg'" alt="Flower image">
+</div>
+
+<!-- 5. Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. 
+And show updated counter value in browser. -->
+
+<div class="box">
+    <h1>Counter App</h1>
+    <button id="decrement">Decrement</button>
+    <p id="counter">0</p>
+    <button id="increment">Increment</button>
+    <div id="container"></div>
+    <button id="refresh">Refresh</button>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
